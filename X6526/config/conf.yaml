@@ -1,0 +1,4 @@
+loggerConfigPath: ../config/logger.conf
+testData: ../data/login.csv
+testCaseDir: ../testcases
+reportDir: ../reports
