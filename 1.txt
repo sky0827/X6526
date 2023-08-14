@@ -1,0 +1,6 @@
+52:package:/system/app/PlayAutoInstallStub/PlayAutoInstallStub.apk
+54:package:/system/app/HiBrowser_Go/HiBrowser_Go.apk
+56:package:/system/app/XShare_Go/XShare_Go.apk
+66:package:/system/app/Facebook-appmanager_Go/Facebook-appmanager_Go.apk
+88:package:/system/app/PlayAutoInstallStub/PlayAutoInstallStub.apk
+90:package:/system/app/ChromeAssistant_Go/ChromeAssistant_Go.apk
