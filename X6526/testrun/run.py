@@ -5,7 +5,7 @@ from common.util import Util
 test_case_dir=Util.get_conf()['testCaseDir']
 report_dir=Util.get_conf()['reportDir']
 
-dis=unittest.defaultTestLoader.discover(test_case_dir,pattern='*_test.py')   # 执行以_test结尾的py文件
+dis=unittest.defaultTestLoader.discover(test_case_dir,pattern='sound_test.py')   # 执行以_test结尾的py文件
 
 #  生成测试报告执行
 # now_time=time.strftime('%Y-%m-%d %H %M %S')  # 设置时间格式

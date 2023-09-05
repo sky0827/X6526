@@ -6,7 +6,7 @@ from common.util import Util,logger
 class Myutil(unittest.TestCase):
     def setUp(self) -> None:
         desired_caps={}
-        desired_caps['deviceName']= 'V658X65260123456'
+        desired_caps['deviceName']= '109804038D000076'
         desired_caps['platformName']= 'Android'
         desired_caps['platformVersion']= '13'
         desired_caps['appPackage']= 'com.android.settings'
