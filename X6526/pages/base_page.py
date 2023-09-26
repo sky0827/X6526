@@ -30,3 +30,34 @@ class Base_page:
                 break
             except NoSuchElementException:
                 break
+
+    # 判断元素是否可以点击
+    def check_element_click(self,*loc):
+        return self.driver.find_element(*loc).is_enabled()
+
+    #  获取界面中所有元素开关
+    def get_all_buttons(self,*loc):
+        return self.driver.find_elements(*loc)
+
+    #  检查元素开关状态
+    def check_element_button(self,*loc):
+        return self.driver.find_element(*loc).get_attribute("checked")
+
+    # 判断元素开关为开  如果为关则打开
+    def element_button_ison(self,loc):
+        if loc.get_attribute("checked")=='true':
+            pass
+        else:
+            loc.click()
+
+    # 判断元素开关为关  如果为开则关闭
+    def element_button_isoff(self,loc):
+        if loc.get_attribute("checked")=='false':
+            pass
+        else:
+            loc.click()
+
+
+
+
+

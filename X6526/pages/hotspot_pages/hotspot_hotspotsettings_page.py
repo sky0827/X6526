@@ -12,7 +12,7 @@ class Hotspot_hotspotsettings_page(Base_page):
 
     def click_name(self):
         self.get_element(*self.name).click()
-        time.sleep(1)
+        time.sleep(2)
         self.back_button()
         self.back_button()
 
@@ -28,6 +28,13 @@ class Hotspot_hotspotsettings_page(Base_page):
         self.back_button()
 
     def click_apBand(self):
-        self.get_element(*self.ap_band).click()
-        time.sleep(1)
-        self.back_button()
+        # self.get_element(*self.ap_band).click()
+        # time.sleep(1)
+        # self.back_button()
+        if self.check_element_click(*self.ap_band) == True:
+            self.get_element(*self.ap_band).click()
+            time.sleep(1)
+            self.back_button()
+        else:
+            pass
+

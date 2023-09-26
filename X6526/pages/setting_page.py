@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import Base_page
 from appium.webdriver.common.appiumby import By
 from common.util import logger
@@ -12,6 +14,12 @@ class Setting_page(Base_page):
     moreconnections=(By.XPATH,'//*[contains(@text,"More Connections")]')
     display=(By.XPATH,'//*[contains(@text,"Display & Brightness")]')
     sound=(By.XPATH,'//*[contains(@text,"Sound & Vibration")]')
+    notices=(By.XPATH,'//*[contains(@text,"Notification Center")]')
+    storage=(By.XPATH,'//*[contains(@text,"Storage")]')
+    app=(By.XPATH,'//*[contains(@text,"App Management")]')
+    location=(By.XPATH,'//*[contains(@text,"Location")]')
+    special=(By.XPATH,'//*[contains(@text,"Special Function")]')
+    system=(By.XPATH,'//*[contains(@text,"System")]')
 
     def click_myphone(self):
         self.get_element(*self.myPhone).click()
@@ -36,4 +44,23 @@ class Setting_page(Base_page):
 
     def click_sound(self):
         self.no_element_swipe(*self.sound)
+
+    def click_notices(self):
+        self.no_element_swipe(*self.notices)
+
+    def click_storage(self):
+        self.no_element_swipe(*self.storage)
+
+    def click_app(self):
+        self.no_element_swipe(*self.app)
+
+    def click_location(self):
+        self.no_element_swipe(*self.location)
+
+    def click_special(self):
+        self.no_element_swipe(*self.special)
+
+    def click_system(self):
+        self.no_element_swipe(*self.system)
+
 

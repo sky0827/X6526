@@ -12,11 +12,15 @@ class Bluetooth_test(Myutil):
         base=Base_page(self.driver)
 
         setting.click_bluetooth()
-        bluetooth.click_bluetoothButton()  # 打开蓝牙开关
+        # bluetooth.click_bluetoothButton()  # 打开蓝牙开关
+        bluetooth.open_bluetoonth_button()  # 打开蓝牙开关
         bluetooth.click_deviceName()
         bluetooth.click_receivedFiles()
-        bluetooth.click_showCodecModes()  # 打开显示编解码
-        bluetooth.click_showCodecModes()  # 关闭显示编解码
-        bluetooth.click_bluetoothButton()  # 关闭蓝牙开关
+        # bluetooth.click_showCodecModes()  # 打开显示编解码
+        # bluetooth.click_showCodecModes()  # 关闭显示编解码
+        bluetooth.open_showCodecMode_button()  # 打开显示编解码
+        bluetooth.close_showCodecMode_button()  # 关闭显示编解码
+        # bluetooth.click_bluetoothButton()  # 关闭蓝牙开关
+        bluetooth.close_bluetooth_button()  # 关闭蓝牙开关
 
         base.back_button()  # 返回设置界面
